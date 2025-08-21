@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["Title"] = "Customer Tracking System";
+}
+
+<div class="jumbotron">
+    <h1 class="display-4">CTS - Yandisa Ndubela</h1>
+    <p class="lead">Manage your customers efficiently with our comprehensive tracking system.</p>
+    <hr class="my-4">
+    <p>Track customer information, contact details, VAT numbers, and more in one centralized system.</p>
+    <a class="btn btn-primary btn-lg" href="@Url.Action("Index", "Customers")" role="button">
+        Manage Customers
+    </a>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">📋 Customer Management</h5>
+                <p class="card-text">Add, edit, and manage all your customer information in one place.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">🔍 Advanced Filtering</h5>
+                <p class="card-text">Filter customers by name, VAT number, and sort by various criteria.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5>Quick Actions</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="@Url.Action("Create", "Customers")" class="btn btn-success btn-block mb-2">
+                            ➕ Add New Customer
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="@Url.Action("Index", "Customers")" class="btn btn-primary btn-block mb-2">
+                            👥 View All Customers
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="@Url.Action("Index", "Customers")" class="btn btn-info btn-block mb-2">
+                            🔍 Search Customers
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .jumbotron {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border-radius: 15px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .card {
+        border: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1rem;
+        transition: transform 0.2s;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+    .btn-block {
+        padding: 12px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+</style>

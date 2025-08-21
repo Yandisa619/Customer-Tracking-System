@@ -1,0 +1,15 @@
+
+echo ".vs/
+bin/
+obj/
+appsettings.Development.json
+*.user
+*.suo
+*.cache
+*.db
+.vscode/
+.vs/
+.DS_Store
+*.swp
+*.swo
+*~" > .gitignore
